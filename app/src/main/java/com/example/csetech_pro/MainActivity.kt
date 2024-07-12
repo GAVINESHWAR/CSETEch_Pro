@@ -85,6 +85,10 @@ fun MainPage(){
         composable("Internships"){
             Internships(navController=navController)
         }
+        composable("courses"){
+            CoursesPage(navController=navController)
+        }
+
     }
 }
 @Composable
@@ -101,7 +105,6 @@ fun Resources(navController: NavController){
                 backgroundColor = Color.Blue
             )
         },
-//        ottom navigation
         bottomBar = {
             BottomAppBar(
                 backgroundColor = Color.Blue
@@ -215,6 +218,8 @@ fun GradientButton(text: String, images:String,navController: NavController,page
         }
     }
 }
+
+
 
 
 @Preview(showBackground = true)
