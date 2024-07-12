@@ -17,7 +17,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -47,7 +46,7 @@ fun Internships(navController: NavController) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(5.dp),
-            placeholder = { Text(text = "Search Any Interships") },
+            placeholder = { Text(text = "Search Any Internships") },
             leadingIcon = { Icon(imageVector = Icons.Default.Search, contentDescription = "") },
             trailingIcon = {
                 if(searchText.isNotEmpty()){
@@ -114,7 +113,7 @@ fun InternshipPage(item: Platforms) {
                 text = item.dec,
                 textAlign = TextAlign.Justify
             )
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(11.dp))
             Button(
                 onClick = {
                     coroutineScope.launch {
